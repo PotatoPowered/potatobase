@@ -5,4 +5,4 @@ tools:
     php_analyzer: true
 checks:
     php:
-code_rating: true
+        code_rating: true
