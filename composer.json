@@ -11,7 +11,7 @@
   "authors": [
     {
       "name": "Blake Sutton",
-      "email": "blakes@potatopowered.net",
+      "email": "blake@potatopowered.net",
       "role": "Lead Developer"
     }
   ],
@@ -26,12 +26,12 @@
   },
   "autoload": {
     "psr-4": {
-      "potatobase\\": "src"
+      "Potatobase\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "potatobase\\Test\\": "tests",
+      "Potatobase\\Test\\": "tests",
       "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
     }
   }
