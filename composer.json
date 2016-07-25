@@ -1,0 +1,38 @@
+{
+  "name": "potatopowered/potatobase",
+  "description": "Potatobase repository will be an extension of the Phinx migration toolthat allows us to define standards and other database migration specific standards.",
+  "type": "cakephp-plugin",
+  "keywords": [
+    "potatobase",
+    "migrations",
+    "CakePHP"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Blake Sutton",
+      "email": "blakes@potatopowered.net",
+      "role": "Lead Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.16",
+    "cakephp/cakephp": "~3.0",
+    "cakephp/migrations": "^1.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "cakephp/cakephp-codesniffer": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "potatobase\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "potatobase\\Test\\": "tests",
+      "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+    }
+  }
+}

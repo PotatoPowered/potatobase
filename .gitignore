@@ -23,3 +23,11 @@
 /app/Config/core.php
 /app/Config/database.php
 /vendors/*
+
+# Custom
+
+composer.lock
+
+# Development Environments
+
+.idea/
