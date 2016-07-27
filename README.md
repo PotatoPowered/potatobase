@@ -6,4 +6,4 @@
 [![Packagist](https://img.shields.io/packagist/dt/potatopowered/potatobase.svg?style=flat-square)](https://packagist.org/packages/potatopowered/potatobase)
 
 ## Description
-Potatobase repository will be an extension of the Phinx migration toolthat allows us to define standards and other database migration specific standards
+Potatobase repository will be an extension of the Phinx migration tool that allows us to define standards and other database migration specific standards

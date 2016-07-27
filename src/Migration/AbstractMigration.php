@@ -6,14 +6,14 @@
  * For full copyright and license information, please see the LICENSE
  * Redistributions of files must retain the above copyright notice.
  *
- * @author      Blake Sutton <blake@potatopowered.net>
+ * @license     http://www.opensource.org/licenses/mit-license.php MIT License
  * @copyright   Copyright (c) Potato Powered Software
  * @link        http://potatopowered.net
+ * @author      Blake Sutton <blake@potatopowered.net>
  * @since       0.0.1
- * @version     0.0.1
- * @license     http://www.opensource.org/licenses/mit-license.php MIT License
+ * @version     0.0.2
  */
-namespace Potatobase\Migrations;
+namespace Potatobase\Migration;
 
 use Migrations\AbstractMigration as BaseAbstractMigration;
 use Potatobase\DB\Table;

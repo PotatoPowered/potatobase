@@ -1,12 +1,36 @@
 <?php
+/**
+ * Potatobase (https://github.com/PotatoPowered/potatobase)
+ *
+ * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @license     http://www.opensource.org/licenses/mit-license.php MIT License
+ * @copyright   Copyright (c) Potato Powered Software
+ * @link        http://potatopowered.net
+ * @author      Blake Sutton <blake@potatopowered.net>
+ * @since       0.0.1
+ * @version     0.0.2
+ */
 namespace Potatobase\Test\TestCase\DB;
 
 use Cake\TestSuite\TestCase;
 use Phinx\Db\Adapter\MysqlAdapter;
 use Potatobase\DB\Table;
 
+/**
+ * Class PotatobaseTableTest
+ *
+ * Tests for the Potatobase\DB\Table class
+ *
+ * @package Potatobase\Test\TestCase\DB
+ */
 class PotatobaseTableTest extends TestCase
 {
+    /**
+     * Test created column type
+     */
     public function testAddCreationColumnType()
     {
         $adapter = new MysqlAdapter([]);
@@ -21,6 +45,9 @@ class PotatobaseTableTest extends TestCase
         $this->assertEquals(true, $columns[0]->getNull());
     }
 
+    /**
+     * Test modified column type
+     */
     public function testAddModifiedColumnType()
     {
         $adapter = new MysqlAdapter([]);
