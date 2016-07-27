@@ -30,7 +30,8 @@ class AbstractMigrationTest extends TestCase
     /**
      * Test the table object returned by our abstract migration class
      */
-    public function testTableCreateNew() {
+    public function testTableCreateNew()
+    {
         $version = 1;
         $tableName = "TestTable";
         $migration = new AbstractMigration($version);
