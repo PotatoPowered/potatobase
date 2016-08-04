@@ -55,8 +55,25 @@ class PotatobaseTableTest extends TestCase
 
         $this->assertEquals('modified', $columns[0]->getName());
         $this->assertEquals('datetime', $columns[0]->getType());
+        $this->assertEquals(true, $columns[0]->getNull());
         $this->assertEquals(null, $columns[0]->getDefault());
         $this->assertEquals(null, $columns[0]->getLimit());
+    }
+
+    /**
+     * Test TinyText column type
+     */
+    public function testAddTinyTextColumnType()
+    {
+        $adapter = new MysqlAdapter([]);
+        $table = new Table('ntable', [], $adapter);
+        $table->addTinyText("tiny_text");
+        $columns = $table->getPendingColumns();
+
+        $this->assertEquals('tiny_text', $columns[0]->getName());
+        $this->assertEquals('string', $columns[0]->getType());
         $this->assertEquals(true, $columns[0]->getNull());
+        $this->assertEquals(null, $columns[0]->getDefault());
+        $this->assertEquals(25, $columns[0]->getLimit());
     }
 }

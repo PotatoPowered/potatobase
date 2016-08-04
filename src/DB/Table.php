@@ -77,7 +77,7 @@ class Table extends BaseTable
      * @param string    $default    The default value for the field
      * @return BaseTable The table object with the varchar column added.
      */
-    public function addVarChar($name, $size, $nullable = false, $default = null)
+    public function addVarChar($name, $size, $nullable = true, $default = null)
     {
         return $this->addColumn(
             $name,
@@ -104,7 +104,7 @@ class Table extends BaseTable
      * @param string    $default    The default value for the field
      * @return BaseTable The table object with a 25 character varchar column added
      */
-    public function addTinyText($name, $nullable = false, $default = null)
+    public function addTinyText($name, $nullable = true, $default = null)
     {
         return $this->addVarChar($name, 25, $nullable, $default);
     }
