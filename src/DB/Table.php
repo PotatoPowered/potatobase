@@ -10,8 +10,6 @@
  * @copyright   Copyright (c) Potato Powered Software
  * @link        http://potatopowered.net
  * @author      Blake Sutton <blake@potatopowered.net>
- * @since       0.0.1
- * @version     0.0.2
  */
 namespace Potatobase\DB;
 
@@ -65,5 +63,49 @@ class Table extends BaseTable
                 'null' => true,
             ]
         );
+    }
+
+    /**
+     * Add a varchar column to the table
+     *
+     * This function will be used to add a different styles of varchar type columns to the table. It can be called
+     * directly but it is recommended to use the specific column creation methods.
+     *
+     * @param string    $name       Name of the column to add
+     * @param int       $size       Character limit of the new column
+     * @param bool      $nullable   Is the field be nullable
+     * @param string    $default    The default value for the field
+     * @return BaseTable The table object with the varchar column added.
+     */
+    public function addVarChar($name, $size, $nullable = false, $default = null)
+    {
+        return $this->addColumn(
+            $name,
+            'string',
+            [
+                'default' => $default,
+                'limit' => $size,
+                'null' => $nullable
+            ]
+        );
+    }
+
+    /**
+     * Add a tiny varchar column to the table
+     *
+     * This function adds a 25 character length varchar column to the table.
+     *   + **Type:** varchar
+     *   + **Size:** 25
+     *   + **Nullable:** false
+     *   + **Default:**  null
+     *
+     * @param string    $name       Name of the column to add
+     * @param bool      $nullable   Is the field be nullable
+     * @param string    $default    The default value for the field
+     * @return BaseTable The table object with a 25 character varchar column added
+     */
+    public function addTinyText($name, $nullable = false, $default = null)
+    {
+        return $this->addVarChar($name, 25, $nullable, $default);
     }
 }

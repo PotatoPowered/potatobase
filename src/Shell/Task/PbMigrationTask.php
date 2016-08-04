@@ -10,8 +10,6 @@
  * @copyright   Copyright (c) Potato Powered Software
  * @link        http://potatopowered.net
  * @author      Blake Sutton <blake@potatopowered.net>
- * @since       0.0.2
- * @version     0.0.1
  */
 namespace Potatobase\Shell\Task;
 

@@ -1,8 +1,9 @@
 {
   "name": "potatopowered/potatobase",
-  "description": "Potatobase repository will be an extension of the Phinx migration toolthat allows us to define standards and other database migration specific standards.",
+  "description": "Potatobase repository will be an extension of the Phinx migration tool that allows us to define standards and other database migration specific standards.",
   "type": "cakephp-plugin",
   "keywords": [
+    "potato",
     "potatobase",
     "migrations",
     "CakePHP"
