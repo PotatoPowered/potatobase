@@ -100,4 +100,4 @@ Log::config([
     ]
 ]);
 
-Plugin::load('GravatarHelper', ['path' => ROOT]);
+Plugin::load('Potatobase', ['path' => ROOT]);
